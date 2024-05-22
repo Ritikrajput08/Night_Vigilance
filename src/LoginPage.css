@@ -1,0 +1,67 @@
+.login-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f8f8f8;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .content {
+    display: flex;
+    height: calc(100vh - 160px);
+  }
+  
+  .image-section {
+    flex: 1;
+    background: url('bg-03.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .login-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  
+  .vigilance-logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  h2 {
+    margin: 20px 0;
+  }
+  
+  .google-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .google-logo {
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+  }
+  
