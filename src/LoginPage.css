@@ -1,67 +1,96 @@
 .login-page {
-    font-family: Arial, sans-serif;
-  }
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 3%;
+  left: 8%;
+  right: 8%;
+  height: 75px;
+  background-color: #e0d8d8;
+  z-index: 1000; 
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+
+.logo {
+  height: 50px;
   
-  .header {
-    padding: 20px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #f8f8f8;
-  }
+
+}
+.logo2 {
+  height: 50px;
+
+}
+
+.content {
+  display: flex;
+  height: calc(100vh - 8vh); 
+ 
+}
+
+.image-section {
+  flex: 1;
+  background: url('cmpny.jpg') no-repeat center center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+.login-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.vigilance-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+h2{
+  margin-top: 10px;
+}
+
+#lognn:hover{
+background-color: #ee9a9a;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #4f4a4a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 500px;
+  color: #fff;
+}
+
+.google-logo {
+  height: 20px;
+  margin-right: 10px;
   
-  .logo {
-    height: 50px;
-  }
+}
+
+footer {
+  height: 5vh; 
+  padding: 10px;
+  text-align: center;
+  background-color: #242121;
+  color: #fff;
   
-  .content {
-    display: flex;
-    height: calc(100vh - 160px);
-  }
-  
-  .image-section {
-    flex: 1;
-    background: url('bg-03.jpg') no-repeat center center;
-    background-size: cover;
-  }
-  
-  .login-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-  }
-  
-  .vigilance-logo {
-    width: 100px;
-    height: auto;
-  }
-  
-  h2 {
-    margin: 20px 0;
-  }
-  
-  .google-button {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f1f1f1;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .google-logo {
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-  footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #000;
-    color: #fff;
-  }
-  
+}
