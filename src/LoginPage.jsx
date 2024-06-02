@@ -1,4 +1,3 @@
-// LoginPage.js
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./LoginPage.css";
@@ -12,11 +11,11 @@ const LoginPage = () => {
 
   return (
     <div className="login-page">
-      <div className="header">
+      <div className="headerr">
         <img
           src="jindal-logo.png"
           alt="Jindal Steel & Power Logo"
-          className="logo"
+          className="logo1"
         />
         <img
           src="jindal-logo-revised-2@2x.png"

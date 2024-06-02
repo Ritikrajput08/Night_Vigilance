@@ -3,12 +3,14 @@
   position: relative;
   overflow: hidden;
 }
-.header {
+
+
+.headerr{
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 3%;
+  top: 5%;
   left: 8%;
   right: 8%;
   height: 75px;
@@ -18,22 +20,20 @@
   padding-right: 15px;
   border-radius: 50px 50px 50px 50px;
 }
-
-
-.logo {
-  height: 50px;
   
 
+.logo1 {
+  height: 50px;
+  
 }
+
 .logo2 {
   height: 50px;
-
 }
 
 .content {
   display: flex;
   height: calc(100vh - 8vh); 
- 
 }
 
 .image-section {
@@ -58,12 +58,12 @@
   margin-bottom: 40px;
 }
 
-h2{
+h2 {
   margin-top: 10px;
 }
 
-#lognn:hover{
-background-color: #ee9a9a;
+#lognn:hover {
+  background-color: #ee9a9a;
 }
 
 .google-button {
@@ -83,7 +83,6 @@ background-color: #ee9a9a;
 .google-logo {
   height: 20px;
   margin-right: 10px;
-  
 }
 
 footer {
@@ -92,5 +91,4 @@ footer {
   text-align: center;
   background-color: #242121;
   color: #fff;
-  
 }

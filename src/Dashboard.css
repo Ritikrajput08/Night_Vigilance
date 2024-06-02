@@ -12,59 +12,73 @@ body {
 
 .container {
   display: flex;
- 
-  
 }
 
 .sidebar {
-
-  background-color:  #3f87ce;
+  background-color: #3f87ce;
   height: 100vh;
- 
   color: white;
   width: 250px;
+  padding: 20px;
 }
-
-.logo img {
-  width: 100px; 
-  height: 60px; 
-  margin-bottom: 10px;
-  
+.home{
+  padding-right:10px ;
 }
 
 .logo {
-  
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 30px;
-  background-color: white;
+  text-align: center;
 }
-#bck{
-  background-color:  #104376;
-  height: 5vh;
-}
-#hvr:hover{
-  background-color:  #104376;
-  height: 5vh;
- 
- 
+
+.logo img {
+  width: 100px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 
 .menu-item {
   margin: 20px 0;
   cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#bck {
+  background-color: #104376;
+}
+
+#hvr:hover {
+  background-color: #104376;
 }
 
 .content {
   padding: 20px;
   flex-grow: 1;
+  position: relative;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  position: absolute;
+    top: 3%;
+    left: 1%;
+    right: 1%;
+    height: 75px;
+    background-color: #fff;
+    z-index: 1000;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.Dsbd {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
 }
 
 .breadcrumb {
@@ -76,34 +90,36 @@ body {
   background-color: #6c757d;
   width: 60px;
   height: 60px;
+  border-radius: 50%;
 }
 
 .search-section {
   display: flex;
   align-items: center;
-  margin-left: 10px;
   padding: 10px;
-  background-color:  #104376;
-  height: 10vh;
-  
-  margin: 20px 0;
+  background-color: #104376;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  height: 90px;
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  top: 130px;
 }
 
 .search-row {
   display: flex;
-  gap: 10px;
-  
+  gap: 15px;
+  flex-grow: 1;
 }
-#ps:hover{
-  background-color: #4d84bb;
-}
+
 .search-row select,
 .search-row input {
   padding: 5px;
   font-size: 1rem;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 5px;
   width: 220px;
-  height: 40px;
+  height: 55px;
 }
 
 .search-row button {
@@ -113,36 +129,35 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 5px;
   width: 180px;
-  height: 40px;
+  height: 55px;
 }
-.vv{
-  margin-left: 30px;
-  margin-bottom: 20px;
+
+.search-row button:hover {
+  background-color: #4d84bb;
 }
-.Dsbd{
-  font-weight: bolder;
-  font-size: larger;
-  
-  margin-bottom: 4px;
-}
-#tx{
-  color: white;
-  font-family:  Arial;
-}
+
 .summary-section {
-  
   background-color: rgb(60, 49, 49);
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  top: 230px;
 }
-#pld:hover{
-  background-color: rgb(185, 105, 105);
+
+#tx {
+  color: white;
+  font-family: Arial;
 }
+
 .add-members-btn {
   height: 6vh;
   width: 25vh;
@@ -152,16 +167,22 @@ body {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 5px;
   font-weight: bold;
   font-size: large;
 }
-.trs{
-  background-color: rgb(27, 27, 225);
+
+.add-members-btn:hover {
+  background-color: rgb(185, 105, 105);
 }
+
 .table-section table {
-  width: 100%;
+  width: 98%;
   border-collapse: collapse;
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  top: 320px;
 }
 
 .table-section th,
@@ -179,28 +200,43 @@ body {
   background-color: #f9f9f9;
 }
 
+.trs {
+  background-color: rgb(27, 27, 225);
+  color: white;
+}
+
 .pagination {
   display: flex;
-  justify-content: center;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
   margin-top: 20px;
-  
+  position: absolute;
+  top:480px;
 }
-#pn:hover{
-  background-color: rgb(182, 179, 179);
+.pg2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
 }
-#pn{
-  border: solid;
-  background-color: rgb(252, 251, 251);
-  color: black;
-}
+
 .pagination button {
   height: 6vh;
   width: 6vh;
-  margin: 0%;
+  margin: 0 5px;
   cursor: pointer;
   background-color: #778ca4;
   color: white;
   border: none;
-  border-radius: 5px 5px 5px 5px;
-  margin-left: 150px;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
+  background-color: rgb(182, 179, 179);
+}
+
+#pn {
+  border: solid 1px #ccc;
+  background-color: rgb(252, 251, 251);
+  color: black;
 }
