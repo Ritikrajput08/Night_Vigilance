@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
-const Dashboard = () => {
+const Report = () => {
   return (
     <div className="container">
       <div className="sidebar">
@@ -67,10 +67,10 @@ const Dashboard = () => {
         </div>
         <div className="summary-section">
           <h2 id="tx" className="vv">
-            Roaster Summary
+            Report Summary
           </h2>
           <button id="pld" className="add-members-btn">
-            + Add Members
+            + Add Report
           </button>
         </div>
         <div className="table-section">
@@ -141,4 +141,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Report;
